@@ -19,6 +19,7 @@ html{
   padding: 10px 80px;
   background: var(--primary-color)!important;
   margin-bottom: 100px;
+  border-bottom: 5px solid var(--secondary-color);
 }
 
 a.navbar-brand{
