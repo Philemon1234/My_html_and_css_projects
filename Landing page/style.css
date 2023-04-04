@@ -5,7 +5,7 @@ html{
 }
 
 :root{
---primary-color: #0b2956;
+--primary-color: #02142e;
 --secondary-color: #222;
 --color-white: #fff;
 --color-black: #000;
@@ -13,12 +13,20 @@ html{
 --color-text: #777;
 }
 
+body{
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+}
 
 /* Navbar */
 .navbar{
   padding: 10px 80px;
-  background: var(--primary-color)!important;
+  background: var(--secondary-color)!important;
+  box-shadow: 0 2px 3px rgba(255, 255, 255, .5);
   margin-bottom: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
   border-bottom: 5px solid var(--secondary-color);
 }
 
@@ -42,6 +50,7 @@ a.navbar-brand{
 /* Hero Section */
 .hero-section{
   margin-bottom: 100px;
+  margin-top: 200px;
 }
 
 .col-lg-6{
@@ -67,6 +76,7 @@ a.navbar-brand{
   border-radius: 30px;
   transition: .5s;
   margin-bottom: 30px;
+  box-shadow: 0 2px 3px rgba(255, 255, 255, .5);
 }
 
 .feature-box:hover{
@@ -178,7 +188,7 @@ iframe {
 }
 
 .footer-section{
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 20px;
   color: var(--color-white);
   text-align: center;
