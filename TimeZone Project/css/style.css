@@ -3,3 +3,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-family: sans-serif;
+}
+
+:root{
+    --primary-color: #ff2020;
+    --secondary-color: #0b1c39;
+    --background: #4a4a4b;
+    --color-black: #000;
+    --color-white: #fff;
+    --text-color-gray: #777;
+}
+
+/* ---Nav_Bar---- */
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eef1f5;
+    padding: 1.5rem 3rem;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+li a{
+    color: var(--color-black);
+    transition: .5s;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+li a:hover{
+    color: var(--primary-color);
+}
+
+.nav_icon_container li{
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.nav_icons{
+    font-size: 1.2rem;
+}
