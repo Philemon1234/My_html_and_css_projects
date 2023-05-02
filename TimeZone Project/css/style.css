@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    font-family: sans-serif;
-}
-
 :root{
     --primary-color: #ff2020;
     --secondary-color: #0b1c39;
@@ -17,36 +13,27 @@ html{
     --text-color-gray: #777;
 }
 
-/* ---Nav_Bar---- */
-.nav_bar{
+
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #eef1f5;
-    padding: 1.5rem 3rem;
+    padding: 25px;
+    background-color: #efe6e6;
 }
 
-ul li{
+.home_nav ul li{
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 40px;
 }
 
-li a{
+.home_nav ul li a{
     color: var(--color-black);
-    transition: .5s;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 20px;
+    transition: .3s;
 }
 
-li a:hover{
+.home_nav ul li a:hover{
     color: var(--primary-color);
-}
-
-.nav_icon_container li{
-    display: inline-block;
-    margin-right: 1.5rem;
-}
-
-.nav_icons{
-    font-size: 1.2rem;
 }
