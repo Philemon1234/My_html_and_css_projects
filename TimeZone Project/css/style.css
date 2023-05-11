@@ -13,12 +13,15 @@
     --text-color-gray: #777;
 }
 
+html{
+    font-family: sans-serif;
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 40px 30px;
     background-color: #efe6e6;
 }
 
@@ -32,8 +35,69 @@ nav{
     text-decoration: none;
     font-size: 20px;
     transition: .3s;
+    padding: 40px 20px;
+    /* background-color: aqua; */
 }
 
 .home_nav ul li a:hover{
     color: var(--primary-color);
 }
+
+.nav_icons a{
+    color: var(--color-black);
+    margin-left: 50px;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.nav_icons a:hover{
+    color: var(--primary-color);
+}
+
+.hot{
+    position: relative;
+}
+
+.hot::before{
+    content: "HOT";
+    background: var(--primary-color);
+    color: var(--color-white);
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-weight: bold;
+    position: absolute;
+    right: -30px;
+    top: -25px;
+}
+
+.drop_down_menu{
+    position: absolute;
+    top: 65px;
+    width: 230px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.drop_down_menu::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.drop_down_menu li{
+    padding: 5px 0;
+}
+
+.drop_down_links{
+    padding: 0!important;
+}
+
