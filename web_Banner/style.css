@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url(./dots.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.video-container video{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 25px;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-links .quick-links li{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.nav-links .quick-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    padding: 7px 20px 7px 20px;
+    transition: .5s;
+}
+
+.nav-links .quick-links li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.banner{
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-text{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
+.banner-btns .btn{
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px dotted white;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+/* 
+.btn:hover{
+    color: black;
+    background-color: white;
+    transition: .5s;
+    border: 2px dotted red;
+} */
+
+
+
+
+
+
+
+
+
