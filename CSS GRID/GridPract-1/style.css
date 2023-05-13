@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-items:nth-child(2) {
+    background: red;
+}
+
+.grid-items:nth-child(3) {
+    background: lightgreen;
+}
+
+.grid-items:nth-child(4) {
+    background: red;
+}
+
+.grid-items:nth-child(5) {
+    background: #df5f30;
+}
+
+.grid-col-span-4 {
+    grid-column: span 4;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-container{
+    /* background: rgb(56, 2, 2); */
+    height: 90vh;
+    width: 95vw;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-items{
+    background: lightskyblue;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    border: .2rem solid darkorange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
