@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+body{
+    padding: 20px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 796px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-child{
+    background-color: #03094b;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid red;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
