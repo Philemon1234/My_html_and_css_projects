@@ -1,0 +1,157 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+
+}
+ 
+
+
+:root{
+    --primary-color: #595c63;
+    --secondary-color: #bebce1;
+    --tertiary-color: #21202a;
+    --fourth-color: #6f6b8b;
+    --red-color: #694565;
+    --screen-color: #a3969f;
+}
+
+.container{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+background-color: var(--primary-color);
+border-radius: 10px;
+    
+}
+
+.screen{
+    background-color: var(--screen-color);
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    height: 40px;
+    font-size: 15px;
+    text-align: right;
+    width: 403px;
+}
+
+.button{
+    border: none;
+    padding: 5px;
+    /* color: white; */
+
+}
+
+.sci-btn{
+    background-color: var(--tertiary-color);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 900;
+    cursor: pointer;margin: 3px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+    
+
+}
+
+.sci-btn :active{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+.grey-btn{
+    background-color: var(--secondary-color);
+}
+
+.reply-btn{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px auto;
+
+}
+
+.reply-btn button{
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+
+
+}
+
+.reply-btn button:hover{
+    background-color: blue;
+    color: var(--secondary-color);
+
+}
+
+.btn-top{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-right{
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.btn-bottom{
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.btn-left{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.sci-btn:hover{
+    /* opacity: .7; */
+}
+
+.simple-btn{
+    width: 73px;
+    border-radius: 15px;
+    margin: 3px;
+    height: 43px;
+    background-color: var(--fourth-color);
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+    border: none;
+
+
+}
+
+.simple-btn:active{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+
+}
+
+.red-btn{
+    background-color: var(--red-color);
+}
