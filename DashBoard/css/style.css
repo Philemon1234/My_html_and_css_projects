@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    background-color: #e5e7eb;
+    position: relative;
+    font-family: sans-serif;
+    display: flex;
+}
+
+html{
+    font-size: 62.5%; 
+}
+
+/* -----------------------------Side-Menu------------------------ */
+#menu{
+    background: #111827;
+    width: 30rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo a{
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 3rem 0 0 3rem;
+    font-size: 2rem;
+}
+
+.logo a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.items{
+    margin-top: 4rem;
+}
+
+.items li{
+    padding: 1.5rem 0;
+}
+
+.items li:hover{
+    border-left: .4rem solid #fff;
+    background: #253047;
+    cursor: pointer;
+}
+
+.items li i{
+    color: rgb(134, 141, 151);
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 1rem 0 2.5rem;
+    transition: .3s all;
+}
+
+.items li:hover i,
+.items li:hover a {
+    color: #f3f4f6;
+}
+
+.items li a{
+    color: rgb(134, 141, 151);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: .5s all;
+}
+
+
+
+/* -----------------------------Main------------------------ */
+
+#interface{
+    width: calc(100% - 30rem)!important;
+    margin-left: 30rem;
+    position: relative;
+}
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu-btn{
+    font-size: 2.7rem;
+    color: #2b2b2b;
+    cursor: pointer;
+    margin-right: 2rem;
+    display: none;
+}
+
+.navigation{
+    width: calc(100% - 30rem)!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 1.5rem 3rem;
+    border-bottom: .3rem solid #594ef7;
+    position: fixed;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 1rem 1.4rem;
+    border: .1rem solid #d7dbe6;
+    border-radius: .4rem;
+    position: relative;
+}
+
+.search-icon{
+    font-size: 2rem;
+}
+
+.search i{
+    margin-right: 1.4rem;
+}
+
+.navigation .search input{
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#interface .navigation .profile i{
+    margin-right: 2rem;
+    font-size: 1.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    animation: swing 3s linear infinite;
+}
+
+@keyframes swing {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(8deg); }
+    30% { transform: rotate(-8deg); }
+    45% { transform: rotate(7deg); }
+    60% { transform: rotate(-7deg); }
+    75% { transform: rotate(5deg); }
+    85% { transform: rotate(-5deg); }
+    92% { transform: rotate(4deg); }
+    100% { transform: rotate(0); }
+  }
+
+#interface .navigation .profile .profile-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+#interface .navigation .profile .profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.i-name{
+    color: #444a53;
+    padding: 3rem 3rem 0 3rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 7rem;
+}
+
+.values{
+    padding: 3rem 3rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.values .val-box{
+    background-color: #fff;
+    width: 25rem;
+    padding: 1.6rem 2rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box i{
+    font-size: 2.5rem;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 2rem; 
+}
+
+.values .val-box:nth-child(1) i{
+    background-color: #7b74ec;
+}
+
+.values .val-box:nth-child(2) i{
+    background-color: #5c8af0;
+}
+
+.values .val-box:nth-child(3) i{
+    background-color: #e45d99;
+}
+
+.values .val-box:nth-child(4) i{
+    background-color: #74daec;
+}
+
+.values .val-box h3{
+    font-size: 1.8rem;
+    margin-bottom: .6rem;
+}
+
+.values .val-box span {
+    font-size: 1.5rem;
+    color: #828997;
+}
+
+.board{
+    width: 95%;
+    margin: 3rem 0 3rem 3rem;
+    overflow: auto;
+    background: #fff;
+    border-radius: .8rem;
+}
+
+.board img{
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.board h5{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.board p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #787d8d;
+}
+
+.board .people{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: .1rem solid #eef0f3;
+}
+
+thead td{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-size: 400;
+    background: #f9fafb;
+    text-align: start;
+    padding: 1.5rem;
+}
+
+
+tbody tr td{
+    padding: 1rem 1.5rem;
+}
+
+.active p{
+    background-color: #d7fada;
+    padding: .2rem 1rem;
+    display: inline-block;
+    border-radius: 4rem;
+    color: #2b2b2b;
+}
+
+.edit a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #554cd1;
+    font-weight: 600;
+}
+
+
+
+/* -------------------------------------------------MEDIA QUERY---------------------------------------- */
+@media (max-width: 834px) {
+    #menu {
+        width: 27rem;
+        position: fixed;
+        left: -27rem;
+    }
+
+    #interface {
+        width: 100%;
+        margin-left: 0;
+        display: inline-block;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .values {
+        padding: 3rem 3rem 0 3rem;
+        justify-content: flex-start;
+    }
+
+    .values .val-box {
+        padding: 1.6rem 2rem;
+        margin: 1rem 2rem 1rem 0;
+    }
+
+    .board{
+        width: 92%;
+        padding: 0;
+        overflow-x: auto;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
