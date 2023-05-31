@@ -28,6 +28,7 @@ nav{
 .home_nav ul li{
     display: inline-block;
     margin-right: 40px;
+    z-index: 10;
 }
 
 .home_nav ul li a{
@@ -79,7 +80,7 @@ nav{
     border-radius: 5px;
     background-color: var(--color-white);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .drop_down_menu::after{
@@ -101,3 +102,15 @@ nav{
     padding: 0!important;
 }
 
+
+.drop_down_menu::before{
+    content: "";
+    background-color: var(--primary-color);
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
