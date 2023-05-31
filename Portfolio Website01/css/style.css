@@ -18,24 +18,23 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(../images/globe.gif); */
-    /* background-size: cover;
-    background-position: center; */
+    /* background-image: url(../images/banner_vid.mp4); */
+    background-size: cover;
+    background-position: center; 
     position: relative;
+    /* background-color: rgb(255, 0, 79); */
+    /* z-index: -100; */
 }
 
-.header-img{
-    width: 40%;
-    position: absolute;
-    right: 5rem;
-    top: 50%;
-    z-index: -10;
-    transform: translateY(-50%);
-}
-
-.header-img img{
+/* .header-img img{
     width: 100%;
     z-index: -10;
+} */
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/digital.jpg);
 }
 
 .container{
@@ -52,7 +51,7 @@ nav{
     background: #080808;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 200;
     padding: 10px 40px;
 }
 
@@ -92,6 +91,9 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    z-index: 10;
+    position: absolute;
+    top: 0;
 }
 
 .header-text h1{
@@ -419,12 +421,11 @@ nav .fa{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(../images/phone-background.png);
-        height: 105vh;
+        height: 80vh;
     }
 
     .header-text{
-        margin-top: 100%;
+        margin-top: 40%;
         font-size: 16px;
     }
 
@@ -438,7 +439,8 @@ nav .fa{
     }
 
     nav ul{
-        background: #ff004f;
+        background: rgba(72, 1, 24, 0.2);
+        backdrop-filter: blur(50px);
         position: fixed;
         top: 0;
         right: -200px;
@@ -495,7 +497,8 @@ nav .fa{
     }
 
     nav ul{
-        background: #ff004f;
+        background: rgba(72, 1, 24, 0.2);
+        backdrop-filter: blur(50px);
         position: fixed;
         top: 0;
         right: -200px;
@@ -521,23 +524,6 @@ nav .fa{
     .contact-left, .contact-right{
         flex-basis: 100%;
         }
-
-    .header-img img{
-        width: 100%;
-        left: 50%!important;
-        right: 30rem!important;
-
-    }
-
-    .header-img {
-        width: 54%;
-        position: absolute;
-        /* right: 11rem; */
-        top: 50%;
-        left: 47%;
-        z-index: -10;
-        transform: translate(-50%, -50%);
-    }
 }
 
 
