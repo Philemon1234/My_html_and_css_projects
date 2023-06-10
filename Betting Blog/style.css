@@ -21,17 +21,32 @@ html{
 header{
     background-color: #0B1E3D;
     height: 100vh;
+    background: url(./assets/bet_header_img.png);
+    box-shadow: inset 0 0 90px 90px rgba(0, 0, 0, .9);
 }
 
 .nav_bar{
-        background-color: #FEDF05;
-        padding: 2rem;
+        padding: 2rem 2rem 2rem 10rem;
 }
 
 .bet_nav_logo{
     width: 15rem;
+    display: inline-block;
 }
 
 .bet_nav_logo img{
+    width: 100%;
+}
+
+.banner{
+    background-color: #FEDF05;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.banner-child{
+    background-color: #FF4D52;
     width: 100%;
 }
