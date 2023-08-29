@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("bdy.webp");
+}
+
+header {
+  height: 100vh;
+}
+
+.container {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.nav a:hover {
+  color: black;
+  transition: .5s;
+}
+
+.nav {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.logo {
+  color: white;
+  font-size: 8px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.logo span {
+  font-family: 'La Belle Aurore', cursive;
+  color: white;
+  font-size: 40px;
+}
+
+.banner {
+  background-image: url("ht.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.cosmetics {
+  color: aqua;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  font-size: 30px;
+}
+
+.m {
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  left: 10%;
+  top: 50px;
+  width: 1150px;
+  height: 600px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.vdo-text {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.ia {
+  font-size: 40px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.product-card {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+
+.product-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.product-card h4.a {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.strawberry {
+  background-image: url("strawberry.jpg");
+  right: 100px;
+  top: 750px;
+}
+
+.strawberry img {
+  width: 100%;
+  height: 100%;
+}
+
+.chocolate,
+.milk,
+.honey,
+.avocado {
+  width: 500px;
+  height: 350px;
+  position: absolute;
+}
+
+.chocolate {
+  left: 100px;
+  top: 1300px;
+}
+
+.milk {
+  right: 100px;
+  top: 1300px;
+}
+
+.honey {
+  left: 100px;
+  top: 1700px;
+}
+
+.avocado {
+  right: 100px;
+  top: 1700px;
+}
+
+.chocolate img,
+.milk img,
+.honey img,
+.avocado img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: grey;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 2900px;
+  color: black;
+}
+
+.futa {
+  color: black;
+}
+
+.futa:hover {
+  color: aqua;
+  transition: .5s;
+}
+
+.ftr {
+  color: aqua;
+}
+
+.footer-rows {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  width: 80%;
+}
