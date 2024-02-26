@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply h-72 w-56 rounded-xl overflow-hidden relative cursor-pointer transform hover:-translate-y-3 transition ease-out 500;
+}
